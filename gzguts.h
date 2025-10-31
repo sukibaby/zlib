@@ -30,6 +30,12 @@
 #endif
 #include <fcntl.h>
 
+#ifdef __APPLE__
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <unistd.h>
+#endif
+
 #ifdef _WIN32
 #  include <stddef.h>
 #endif
